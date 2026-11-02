@@ -14,6 +14,7 @@ add_library(numrecipes
     src/misc.c
     src/linalg.c
     src/util.c
+        src/matrix.c
 )
 
 add_library(numrecipes::numrecipes ALIAS numrecipes)
@@ -35,7 +36,7 @@ set_target_properties(numrecipes
         VERSION ${PROJECT_VERSION}
         SOVERSION ${PROJECT_VERSION_MAJOR}
         PUBLIC_HEADER
-            "include/numrecipes/misc.h;include/numrecipes/linalg.h;include/numrecipes/util.h"
+            "include/numrecipes/misc.h;include/numrecipes/linalg.h;include/numrecipes/util.h;include/numrecipes/matrix.h"
 )
 
 install(
